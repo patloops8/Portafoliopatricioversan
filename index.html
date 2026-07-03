@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patricio Veraza — Diseñador Multimedia</title>
+<meta name="description" content="Portafolio de Patricio Veraza, diseñador multimedia especializado en diseño deportivo, branding, animación 2D/3D y postproducción de video.">
+<link rel="stylesheet" href="styles.css?v=20260702">
+</head>
+<body>
+
+<div id="splash">
+  <div class="splash-mark">PV<span style="color:var(--accent)">.</span></div>
+</div>
+
+<header id="site-header">
+  <nav class="container">
+    <a href="#hero" class="logo">PATRICIO<span>.</span>VERAZA</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">Sobre mí</a></li>
+      <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <span class="hero-eyebrow reveal">Diseño Multimedia · Branding · Motion</span>
+      <h1 class="hero-title reveal" data-split>
+        <span class="split-line"><span>Patricio Veraza</span></span>
+        <span class="split-line"><span class="accent-word">Diseñador Multimedia</span></span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Doy vida a las ideas a través del movimiento, la energía del diseño deportivo
+        y la precisión de la identidad visual.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#portfolio" class="btn btn-primary">Ver portafolio</a>
+        <a href="#contact" class="btn btn-ghost">Hablemos</a>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Sobre mí</span>
+          <h2 class="section-title">Identidad &amp; Craft</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Soy un <strong>diseñador multimedia</strong> apasionado por la creación de narrativas
+            visuales de alto impacto. Mi enfoque combina la fuerza y la energía del
+            <strong>diseño deportivo</strong>, la precisión del <strong>branding</strong> y el
+            dinamismo de la <strong>animación</strong> y la edición de video. Me especializo en
+            transformar conceptos en experiencias digitales memorables, cuidando cada detalle
+            técnico y estético desde la primera idea hasta el render final.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num">06</div>
+              <div class="stat-label">Herramientas</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">03</div>
+              <div class="stat-label">Disciplinas 3D/2D</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Detalle técnico</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-toolset reveal">
+          <span class="toolset-title">Toolset</span>
+
+          <div class="toolset-group">
+            <span class="toolset-group-label">Diseño &amp; Branding</span>
+            <div class="badge-row">
+              <span class="badge"><span class="dot"></span>Adobe Photoshop</span>
+              <span class="badge"><span class="dot"></span>Adobe Illustrator</span>
+            </div>
+          </div>
+
+          <div class="toolset-group">
+            <span class="toolset-group-label">Video &amp; Postproducción</span>
+            <div class="badge-row">
+              <span class="badge"><span class="dot"></span>Adobe Premiere Pro</span>
+              <span class="badge"><span class="dot"></span>Adobe After Effects</span>
+            </div>
+          </div>
+
+          <div class="toolset-group">
+            <span class="toolset-group-label">3D &amp; Animación</span>
+            <div class="badge-row">
+              <span class="badge"><span class="dot"></span>Blender</span>
+              <span class="badge"><span class="dot"></span>Autodesk Maya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Portafolio</span>
+          <h2 class="section-title">Trabajo Seleccionado</h2>
+        </div>
+        <p class="section-desc">Una muestra de proyectos entre video, animación, fotografía, personajes, deporte y marca.</p>
+      </div>
+
+      <div class="filter-bar reveal" id="filterBar">
+        <button class="filter-btn active" data-filter="all">Todo</button>
+        <button class="filter-btn" data-filter="video">Edición de Video</button>
+        <button class="filter-btn" data-filter="anim">Animación 2D/3D</button>
+        <button class="filter-btn" data-filter="character">Diseño de Personajes</button>
+        <button class="filter-btn" data-filter="sport">Diseño Deportivo</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- items injected by main.js from window.__PORTFOLIO__ -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Contacto</span>
+          <h2 class="section-title">Creemos algo juntos</h2>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>
+            ¿Tienes un proyecto en mente? Cuéntame la idea y démosle movimiento,
+            identidad y ritmo.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com/pato_veraza" target="_blank" rel="noopener" class="social-link">
+              <span class="plat">Instagram</span>
+              <span class="handle">@pato_veraza</span>
+            </a>
+            <a href="https://www.behance.net/verazaveraza1" target="_blank" rel="noopener" class="social-link">
+              <span class="plat">Behance</span>
+              <span class="handle">/verazaveraza1</span>
+            </a>
+            <a href="https://www.linkedin.com/in/patricio-veraza-santoscoy-400756331" target="_blank" rel="noopener" class="social-link">
+              <span class="plat">LinkedIn</span>
+              <span class="handle">in/patricio-veraza-santoscoy</span>
+            </a>
+            <a href="mailto:patricioversan@outlook.com" class="social-link">
+              <span class="plat">Email</span>
+              <span class="handle">patricioversan@outlook.com</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <input type="text" id="name" placeholder=" " required>
+              <label for="name">Nombre</label>
+            </div>
+            <div class="field">
+              <input type="email" id="email" placeholder=" " required>
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="field">
+            <select id="project-type">
+              <option value="">Selecciona un tipo de proyecto</option>
+              <option value="video">Edición de video</option>
+              <option value="anim">Animación 2D/3D</option>
+              <option value="character">Diseño de personajes</option>
+              <option value="sport">Diseño deportivo</option>
+              <option value="branding">Branding</option>
+            </select>
+          </div>
+          <div class="field">
+            <textarea id="message" placeholder=" " required></textarea>
+            <label for="message">Cuéntame sobre tu proyecto</label>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container">
+  <p>© 2026 Patricio Veraza. Todos los derechos reservados.</p>
+  <a href="#hero" class="back-to-top" aria-label="Volver arriba">↑</a>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+  <div class="lightbox-inner">
+    <div class="lightbox-media" id="lightboxMedia"></div>
+    <div class="lightbox-caption">
+      <span class="tag" id="lightboxTag"></span>
+      <h3 id="lightboxTitle"></h3>
+    </div>
+  </div>
+</div>
+
+<script src="lib/gsap.min.js?v=20260702" defer></script>
+<script src="lib/ScrollTrigger.min.js?v=20260702" defer></script>
+<script src="main.js?v=20260702" defer></script>
+</body>
+</html>

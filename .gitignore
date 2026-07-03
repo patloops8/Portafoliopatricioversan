@@ -1,0 +1,5 @@
+# Backups locales de videos sin comprimir (no se suben)
+assets/img/_originals/
+
+# Config local de Claude Code
+.claude/settings.local.json
